@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Demo websockets</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+		<!-- <script src="scripts/jquery.js" /> -->
+		<script src="scripts/chaussettes.js"></script> 
+		<script>
+		$(document).ready(function() {
+            chaussette.init('ws://localhost:8080', $('#status'), $('#messages'));
+            chaussette.connect();
+
+            $('#send').bind('click', function(){
+            	chaussette.send($('#msg').val());
+            });
+
+        });
+		</script>
+
+	</head>
+	<body>
+		<div id="status"></div>
+		<div id="messages"></div>
+		<input type="text" id="msg" />
+		<input id="send" type="button" value="Send" />
+	</body>
+</html>
