@@ -2,10 +2,11 @@ var video = (function(){
 
 	// private
 	var container;
+	var filterId = 0;
+	var filters = ['sepia', 'grayscale', 'hue', 'zoom', 'flip'];
 
-	function hasGetUserMedia() {
-		// Note: Opera is unprefixed.
-		return !!(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+	function changeFilter(elt){
+		elt.removeClass(filters[filterId % filters.length]).addClass(filters[++filterId % filters.length]);
 	}
 
 	//public
@@ -29,14 +30,14 @@ var video = (function(){
 			}
 
 			navigator.getUserMedia({video: true}, function(stream) {
-				console.log(video.container);
-				var videoc = document.querySelector('video');
-				console.log(videoc);
-
-				videoc.src = window.URL.createObjectURL(stream);
+				video.container.get(0).src = window.URL.createObjectURL(stream);
 				}, function(e){
 					console.log('Error : ' + e);
 				});
+
+			setInterval(function(){
+				changeFilter(video.container);
+				}, 6000);
 		}
 
 	};
