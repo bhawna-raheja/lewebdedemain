@@ -1,3 +1,4 @@
+ /*jshint unused:false*/
  /*global console */
 var chaussette = (function(){
     "use strict";
