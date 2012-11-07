@@ -1,0 +1,24 @@
+/* line 2, sass/web2.scss */
+.old body {
+  background: #fff;
+  font-size: 20px;
+}
+/* line 7, sass/web2.scss */
+.old table {
+  margin: 0 auto;
+}
+/* line 11, sass/web2.scss */
+.old table, .old th, .old td {
+  border-width: 1px;
+  border-spacing: 2px;
+  border-style: outset;
+  border-color: gray;
+  border-collapse: separate;
+  background-color: white;
+}
+
+/* line 23, sass/web2.scss */
+.y1995 body {
+  background: yellow;
+  color: green;
+}
