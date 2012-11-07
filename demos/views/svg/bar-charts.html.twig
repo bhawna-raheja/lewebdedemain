@@ -1,0 +1,130 @@
+{% extends 'layout.html.twig' %}
+
+{% block styles %}
+{% endblock %}
+
+{% block content %}
+<h2>Animations Svg</h2>
+<div id="chart">
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script type="text/javascript" src="/js/libs/raphael-min.js"></script>
+<script type="text/javascript">
+
+Raphael.fn.bar = function (label, value, x, y, attributes, duration, delay) {
+
+    // Initial state
+    var bar = this.rect(x, y, attributes.width, 0, 6);
+    bar.attr({
+        'fill': attributes.fill,
+        'stroke-opacity': 0,
+    });
+
+    var circle = this.circle(bar.attr('x') + bar.attr('width') * 0.5, bar.attr('y') - bar.attr('width') * 0.5, 0);
+    circle.attr({
+        'fill': '#FFFFFF',
+        'stroke-opacity': 0
+    });
+
+    var labelText = this.text(circle.attr('cx'), circle.attr('cy'), label);
+    labelText.attr({
+        'fill' : attributes.fill,
+        'opacity': 0,
+        'font-size' : 13,
+        'font-family' : 'ITCFranklinGothic-Demi'
+    })
+
+    var valueText = this.text(circle.attr('cx'), 20, value);
+    valueText.attr({
+        'fill' : attributes.fill,
+        'font-size' : 16,
+        'opacity': 0,
+        'font-family' : 'ITCFranklinGothic-Demi'
+    })
+
+    // Animations
+    bar.animate(Raphael.animation({
+        'height': attributes.height,
+        'y': (y - attributes.height)
+    }, duration, '<>').delay(delay)).pause();
+
+    circle.animate(Raphael.animation({
+        'r': (bar.attr('width') * 0.5 - 4)
+    }, duration * 0.5, 'back-out').delay(delay + duration * 1.4 )).pause();
+
+    valueText.animate(Raphael.animation({
+        'opacity': 1
+    }, duration * 0.2, '>').delay(delay + duration * 2)).pause();
+
+    labelText.animate(Raphael.animation({
+        'opacity': 1
+    }, duration * 0.2, '>').delay(delay + duration * 2 )).pause();
+
+    return this.set(
+        bar,
+        circle,
+        valueText,
+        labelText
+    );
+
+};
+
+Raphael.fn.chart = function (datas, options) {
+    var colors = ['#823A54', '#83B0AD', '#CBC7B0'];
+
+    var barWidth = 50;
+    var y = 240;
+
+    var duration = 600;
+    var delay = duration * 2;
+
+    var chart = this.set();
+
+    var x = 0;
+
+    for(var index = 0; index < datas.length; index++)
+    {
+        chart.push(
+            this.bar(datas[index]['label'], datas[index]['value'], x, y, {'fill' : colors[index%colors.length], 'width': barWidth, 'height': datas[index]['height']}, duration, delay * index * 0.2)
+        );
+        x += barWidth * 1.5;
+    }
+    return chart;
+};
+
+window.onload = function () {
+    var datas = {
+        "datas" : [
+            {
+            'label': 2011,
+            'value': '269',
+            'height': 100
+        },
+        {
+            'label': 2012,
+            'value': '321',
+            'height': 130
+        },
+        {
+            'label': 2013,
+            'value': '321',
+            'height': 130
+        },
+        {
+            'label': 2013,
+            'value': '321',
+            'height': 130
+        }
+        ]
+    };
+
+    var paper = Raphael("chart", 300, 260);
+    var chart = paper.chart(datas.datas, {});
+    chart.resume();
+
+};
+
+</script>
+{% endblock %}

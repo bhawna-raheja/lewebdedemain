@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  {% block styles %}
+  {% endblock  %}
+</head>
+<body>
+<div class="container">
+<header>
+    <h1>
+        Le web de demain
+    </h1>
+</header>
+{% block content %}
+{% endblock  %}
+</div>
+{% block javascripts %}
+{% endblock  %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+
+{% block javascripts %}
+<script src="/js/libs/jquery-1.8.2.min.js"></script>
+<script src="/js/video.js"></script>
+<script>
+$(document).ready(function() {
+
+    video.init($('#video-bg:first'));
+    video.play();
+
+});
+</script>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="/css/video.css" />
+{% endblock %}
+
+{% block content %}
+<h2>HTML5 Videos + Css3</h2>
+<video id="video-bg" autoplay></video>
+{% endblock %}
+

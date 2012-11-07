@@ -1,0 +1,52 @@
+t @font-face{
+  font-family: 'ITCFranklinGothic-Medium';
+  src: url('../fonts/itcfranklingothicstd-med.eot');
+  src: url('../fonts/itcfranklingothicstd-med.eot?') format('eot'),
+  url('../fonts/itcfranklingothicstd-med.ttf') format('truetype'),
+  url('../fonts/itcfranklingothicstd-med.woff') format('woff'),
+  url('../fonts/itcfranklingothicstd-med.svg#ITCFranklinGothic-Medium') format('svg');
+}
+@font-face{
+  font-family: 'ITCFranklinGothic-Heavy';
+  src: url('../fonts/itcfranklingothicstd-hvy.eot');
+  src: url('../fonts/itcfranklingothicstd-hvy.eot?') format('eot'),
+  url('../fonts/itcfranklingothicstd-hvy.ttf') format('truetype'),
+  url('../fonts/itcfranklingothicstd-hvy.woff') format('woff'),
+  url('../fonts/itcfranklingothicstd-hvy.svg#ITCFranklinGothic-Heavy') format('svg');
+}
+@font-face{
+  font-family: 'ITCFranklinGothic-Book';
+  src: url('../fonts/itcfranklingothicstd-book.eot');
+  src: url('../fonts/itcfranklingothicstd-book.eot?') format('eot'),
+  url('../fonts/itcfranklingothicstd-book.ttf') format('truetype'),
+  url('../fonts/itcfranklingothicstd-book.woff') format('woff'),
+  url('../fonts/itcfranklingothicstd-book.svg#ITCFranklinGothic-Book') format('svg');
+}
+@font-face{
+  font-family: 'ITCFranklinGothic-Demi';
+  src: url('../fonts/itcfranklingothicstd-demi.eot');
+  src: url('../fonts/itcfranklingothicstd-demi.eot?') format('eot'),
+  url('../fonts/itcfranklingothicstd-demi.ttf') format('truetype'),
+  url('../fonts/itcfranklingothicstd-demi.woff') format('woff'),
+  url('../fonts/itcfranklingothicstd-demi.svg#ITCFranklinGothic-Demi') format('svg');
+}
+@font-face{
+  font-family: 'FranklinGothic-Condensed';
+  src: url('../fonts/franklingothic-condensed.eot');
+  src: url('../fonts/franklingothic-condensed.eot?') format('eot'),
+  url('../fonts/franklingothic-condensed.ttf') format('truetype'),
+  url('../fonts/franklingothic-condensed.woff') format('woff'),
+  url('../fonts/franklingothic-condensed.svg#FranklinGothic-Condensed') format('svg');
+}
+@font-face{
+  font-family: 'FranklinGothic-ExtraCondensed';
+  src: url('../fonts/franklingothic-extracond.eot');
+  src: url('../fonts/franklingothic-extracond.eot?') format('eot'),
+  url('../fonts/franklingothic-extracond.ttf') format('truetype'),
+  url('../fonts/franklingothic-extracond.woff') format('woff'),
+  url('../fonts/franklingothic-extracond.svg#FranklinGothic-ExtraCondensed') format('svg');
+}
+h1, h2, h3
+{
+  font-family: 'ITCFranklinGothic-Demi';
+}
