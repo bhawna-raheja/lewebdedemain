@@ -6,12 +6,13 @@
 
 <title>Le web de demain</title>
 
-<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-<meta name="author" content="Hakim El Hattab">
+<meta name="description" content="Le web de demain sur les bases du web d'hier, présenté avec la perspective du web d'aujourd'hui">
+<meta name="author" content="Charles Desneuf, Dang Truong Thien Doan, Paul-Emile Miny">
 
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/reveal.css">
 <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
@@ -38,7 +39,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
 
         <section>
             <h1>Le web de demain</h1>
-            <p>Expliqué à partir d'hier</p>
+            <p class="overhead">Expliqué à partir d'hier</p>
         </section>
 
         <section>
@@ -52,8 +53,8 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <img src="img/89.png" />
             </section>
             <section>
-                <ul>
-                    <li>On reste dans un système de type "imprimerie"
+                <ul class="overhead">
+                    <li>On est dans un système de type "imprimerie"
                         <ul>
                             <li>titre</li><li>sous-titre</li><li>paragraphe</li><li>...</li>
                         </ul>
@@ -100,7 +101,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <p>www.cocacola.com</p>
             </section>
             <section>
-                <h3>la naissance de la balise TABLE ! (Pas les chaises par contre)</h3>
+                <p class="overhead">la naissance de la balise TABLE ! (Pas les chaises par contre)</p>
                 <table border="2" cellspacing="3" border-color="red">
                     <tr>
                         <td>Donnée</td><td>Valeur</td>
@@ -117,7 +118,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <img src="http://media.tumblr.com/tumblr_m8l56dcFA61qmeyld.gif" />
             </section>
             <section>
-                <h3><blink>les balises BLINK et MARQUEE !</blink></h3>
+                <p><blink>les balises BLINK et MARQUEE !</blink></p>
                 <marquee direction="up" bgcolor="blue" width="42%">
                 <center><font color="white" SIZE="+1"><b>
                             CECI EST UNE<br />FAÇON DE FAIRE<br />
@@ -160,13 +161,13 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <img src="http://tele.premiere.fr/var/premiere/storage/images/tele/news-tele/soirees-flash-gordon-les-15-et-16-septembre-sur-sci-fi/22252937-1-fre-FR/Soirees-Flash-Gordon-les-15-et-16-septembre-sur-Sci-Fi_image_article_paysage_new.jpg"/>
             </section>
             <section>
-                <ul>
+                <ul class="overhead">
                     <li>Comble les lacunes d'HTML de l'époque : les animations, le visuel</li>
                     <li>Mais a ses limitations vu que c'est un programme "fermé" (référencement, données, ...)</li>
                 </ul>
             </section>
             <section>
-                <p>Et en plus ... C'est pas responsive !</p>
+                <p class="overhead">Et en plus ... C'est pas responsive !</p>
             </section>
         </section>
 
@@ -176,26 +177,32 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <img src="http://25.media.tumblr.com/tumblr_lly4xfJc971qii6tmo1_250.gif"/>
             </section>
             <section>
-                <h2>Ajax</h2>
-                <img src="http://www.hellopro.fr/images/produit-2/1/1/0/ajax-fete-des-fleurs-fleurs-de-printemps-5l-1400011.jpg" />
-            </section>
-            <section>
-                <h2>jQuery</h2>
-                <img src="http://halfelf.org/files/2012/05/jquery-logo.gif"/>
-                <img src="http://halfelf.org/files/2012/05/devo-cover-300x200.jpg"/>
-            </section>
-            <section>
-                <ul>
+                <ul class="overhead">
                     <li>Javascript permet de modifier la structure du document</li>
                     <li>Et la mise en forme</li>
                     <li>Tout ça exécuté côté client</li>
                 </ul>
             </section>
+            <section>
+                <h3>Ajax</h3>
+                <div class="column">
+                    <img src="http://www.hellopro.fr/images/produit-2/1/1/0/ajax-fete-des-fleurs-fleurs-de-printemps-5l-1400011.jpg" />
+                </div>
+                <div class="column">
+                    <p>Permet de refaire appel au serveur après que la page soit chargée</p>
+                    <p>Donc de dynamiser une page qui n'est plus "statique"</p>
+                </div>
+            </section>
+            <section>
+                <h3>La librairie jQuery</h3>
+                <img src="http://halfelf.org/files/2012/05/jquery-logo.gif"/>
+                <img src="http://halfelf.org/files/2012/05/devo-cover-300x200.jpg"/>
+            </section>
         </section>
 
         <section>
             <h2>2002/2010 - xHTML</h2>
-            <ul>
+            <ul class="overhead">
                 <li>Normalisation par rapport à XML</li>
                 <li>Mêmes fonctionalités</li>
                 <li>Mais langage plus propre et plus structuré</li>

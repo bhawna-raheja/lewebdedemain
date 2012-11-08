@@ -1,0 +1,9 @@
+.reveal p.overhead,
+.reveal ul.overhead {
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.column {
+    float: left;
+    width: 50%;
+}
