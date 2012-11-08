@@ -36,18 +36,31 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
     <div class="slides">
 
 
-        <section data-state="old">
+        <section>
             <h1>Le web de demain</h1>
+            <p>Expliqué à partir d'hier</p>
         </section>
 
-        <section data-state="old">
+        <section>
             <h2>Back to 1989 !</h2>
             <img src="http://images.wikia.com/bttf/images/f/fa/DeLorean_Launch.gif" />
         </section>
 
-        <section data-state="old">
+        <section>
             <h2>1989 - HTML 1</h2>
-            <img src="img/89.png" />
+            <section>
+                <img src="img/89.png" />
+            </section>
+            <section>
+                <ul>
+                    <li>On reste dans un système de type "imprimerie"
+                        <ul>
+                            <li>titre</li><li>sous-titre</li><li>paragraphe</li><li>...</li>
+                        </ul>
+                    </li>
+                    <li>Mais avec des hyper-liens (avec la cape)</li>
+                </ul>
+            </section>
         </section>
 
         <section>
@@ -64,6 +77,11 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <img src="img/gif/emailme.gif" />
                 <img src="img/gif/spinningearth.gif" />
                 <img src="img/gif/underconstruction.gif" />
+                <ul>
+                    <li>"Amélioration" des graphismes</li>
+                    <li>Multiplication de la sémantique</li>
+                    <li>Naissance de l'idée de la séparation entre la structure du document et son graphisme</li>
+                </ul>
             </section>
         </section>
 
@@ -82,7 +100,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <p>www.cocacola.com</p>
             </section>
             <section>
-                <h3>la balise TABLE !</h3>
+                <h3>la naissance de la balise TABLE ! (Pas les chaises par contre)</h3>
                 <table border="2" cellspacing="3" border-color="red">
                     <tr>
                         <td>Donnée</td><td>Valeur</td>
@@ -99,32 +117,32 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <img src="http://media.tumblr.com/tumblr_m8l56dcFA61qmeyld.gif" />
             </section>
             <section>
-                <h3>les balises BLINK et MARQUEE !</h3>
-                <MARQUEE DIRECTION="up" bgcolor="blue" width="42%">
-                <CENTER><FONT COLOR="white" SIZE="+1"><B>
-                            CECI EST UNE<br>FAÇON DE FAIRE<br>
-                            DÉROULER LE<br>LE TEXTE VERS<br>LE HAUT<br>
-                            <br>C'EST SIMPLE<br>ET RAPIDE.
-                </B></FONT></CENTER>
-                </MARQUEE>
-                <MARQUEE DIRECTION="left" BGCOLOR="yellow">
+                <h3><blink>les balises BLINK et MARQUEE !</blink></h3>
+                <marquee direction="up" bgcolor="blue" width="42%">
+                <center><font color="white" SIZE="+1"><b>
+                            CECI EST UNE<br />FAÇON DE FAIRE<br />
+                            DÉROULER<br />LE TEXTE VERS<br />LE HAUT<br />
+                            <br />C'EST SIMPLE<br />ET RAPIDE.
+                </b></font></center>
+                </marquee>
+                <marquee direction="left" bgcolor="yellow">
                 Déplacement vers la "gauche"
-                </MARQUEE>
+                </marquee>
                 <P>
-                <MARQUEE DIRECTION="right" BGCOLOR="yellow">
+                <marquee direction="right" bgcolor="yellow">
                 Déplacement vers la "droite
-                </MARQUEE>
-                <MARQUEE SCROLLAMOUNT="1" BGCOLOR="lime">
+                </marquee>
+                <marquee SCROLLAMOUNT="1" bgcolor="lime">
                 Je me déplace très lentement - 1
-                </MARQUEE>
+                </marquee>
                 <P>
-                <MARQUEE SCROLLAMOUNT="10" BGCOLOR="lime">
+                <marquee SCROLLAMOUNT="10" bgcolor="lime">
                 Je me déplace normalement - 10
-                </MARQUEE>
+                </marquee>
                 <P>
-                <MARQUEE SCROLLAMOUNT="20" BGCOLOR="lime">
+                <marquee SCROLLAMOUNT="20" bgcolor="lime">
                 Je me déplace très rapidement - 40
-                </MARQUEE>
+                </marquee>
             </section>
         </section>
 
@@ -154,13 +172,25 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
                 <img src="http://halfelf.org/files/2012/05/jquery-logo.gif"/>
                 <img src="http://halfelf.org/files/2012/05/devo-cover-300x200.jpg"/>
             </section>
+            <section>
+                <ul>
+                    <li>Javascript permet de modifier la structure du document</li>
+                    <li>Et la mise en forme</li>
+                    <li>Tout ça exécuté côté client</li>
+                </ul>
+            </section>
         </section>
 
         <section>
-            <h2>2002/2010 - XHTML</h2>
+            <h2>2002/2010 - xHTML</h2>
+            <ul>
+                <li>Normalisation par rapport à XML</li>
+                <li>Mêmes fonctionalités</li>
+                <li>Mais langage plus propre et plus structuré</li>
+            </ul>
         </section>
 
-        <section data-state="now">
+        <section>
             <h2>Et maintenant ?</h2>
             <img src="http://www.likecool.com/Gear/Pic/Gif%20Hoverboard/Gif-Hoverboard.gif"/>
         </section>
