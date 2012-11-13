@@ -7,3 +7,15 @@
     float: left;
     width: 50%;
 }
+.focus1 {
+    font-size: bold;
+    color: #f00;
+}
+.focus2 {
+    font-size: bold;
+    color: #0f0;
+}
+.focus3 {
+    font-size: bold;
+    color: #00f;
+}
